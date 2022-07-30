@@ -1,0 +1,94 @@
+footer {
+    background-color: rgb(34, 33, 55);;
+    margin-top: 10vh;
+    width: 100%;
+    justify-content: space-between;
+    display: flex;
+    height: 100%;
+}
+
+.footer-base {
+    width: 100%;
+    margin: 15px;
+}
+
+.row-footer {
+    display: flex;
+    flex-wrap: wrap;
+}
+.footer-ol {
+    width: 25%;
+    padding: 0 15px;
+}
+
+.footer-ol h4 {
+    font-size: 22px;
+    color: white;
+    margin-bottom: 20px;
+    font-weight: 500;
+    position: relative;
+    text-transform: uppercase;
+    
+}
+
+.footer-ol ul {
+    list-style: none;
+}
+
+.footer-ol ul li {
+margin: 10px 0;
+}
+
+.footer-ol ul li a {
+    font-size: 16px;
+    text-transform: capitalize;
+    color: white;
+    text-decoration: none;
+    font-weight: 300;
+    display: block;
+    transition: all 0.3s ease;
+}
+.footer ul li a:hover {
+    color: #fafaf5;
+    padding-left: 10px;
+}
+
+.footer-ol .form-sub input {
+    display: inline;
+    width: 93%;
+    padding: 10px;
+    font-size: 15px;
+    outline: none;
+    border: 1px solid white;
+    background: white;
+}
+.footer-ol .form-sub input::placeholder{
+    color: rgb(0, 0, 0);
+}
+.footer-ol .form-sub button {
+    width: 100%;
+    margin-top: 10px;
+    padding: 10px;
+    font-size: 17px;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    cursor: pointer;
+    color: #415aca;
+    border-radius: 3px;
+    font-weight: bold;
+    background-color: white;
+}
+@media(max-width:800px) {
+    .footer-ol{
+        width: 50%;
+        margin-bottom: 30px;
+    }
+}
+
+@media(max-width:600px) {
+    .footer-ol{
+        width: 100%;
+
+    }
+}

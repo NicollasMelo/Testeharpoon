@@ -1,0 +1,92 @@
+nav {
+    display: flex;
+    height:10vh;
+    width: 100%;
+    background-color: rgb(34, 33, 55);
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+  
+  nav .logo {
+    color: white;
+    font-size: 32px;
+    font-weight: 600;
+    text-transform: uppercase;
+  }
+  
+  a.tittle {
+      text-decoration: none;
+      color: white;
+  }
+  a.tittle:hover {
+      text-decoration: none;
+      opacity: 0.4;
+      font-size: 39px;
+      transition: all 0.3s ease-in;
+  }
+  
+  nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+  }
+  nav ul li {
+    margin: 0 5px;
+  }
+  
+  nav ul li a {
+    color: #f2f2f2;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 500;
+    padding: 8px 15px;
+    border-radius: 5px;
+    letter-spacing: 1px;
+    transition: all 0.3s ease;
+  }
+  
+  nav ul li a:hover {
+      opacity: 0.4;
+      font-size: 21px;
+  }
+
+  
+  @media (max-width: 90px) {
+    nav .menu-btn i {
+      display: flex;
+    }
+    nav ul {
+      position: fixed;
+      top: 80px;
+      left: -100%;
+      background-color: white;
+      height: 100vh;
+      width: 100%;
+      text-align: center;
+      display: block;
+      transition: all 0.3s ease;
+    }
+    nav ul.open {
+      left: 0;
+    }
+    nav ul li {
+      width: 100%;
+      margin: 50px 0;
+    }
+    nav ul li a {
+      font-size: 23px;
+      color: black;
+    }
+    nav ul li a.active,
+    nav ul li a:hover {
+      background: none;
+      color: black;
+    }
+  }
+  
+  a.alink:hover {
+      opacity: 0.3;
+      padding-left: 3px;
+      font-size: 18px;
+  }
